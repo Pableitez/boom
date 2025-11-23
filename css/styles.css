@@ -1,17 +1,87 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CUERPO GENERAL */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-h1 {
-  color: #333;
+/* CONTENEDOR DEL JUEGO */
+.container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
 }
+
+/* TÍTULO */
+h1 {
+  color: #d32f2f;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* INPUT */
+input[type="number"] {
+  width: 80px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CUENTA ATRÁS */
+#countdown {
+  font-size: 24px;
+  margin: 15px 0;
+  color: #00796b;
+}
+
+/* RESULTADO */
+#result {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
 #result .green {
   color: #2ecc71;
+  font-weight: bold;
 }
 
 #result .red {
   color: #e74c3c;
+  font-weight: bold;
+}
+
+/* BOTÓN REINICIAR */
+button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0277bd;
 }
